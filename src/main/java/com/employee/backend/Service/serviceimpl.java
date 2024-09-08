@@ -18,7 +18,6 @@ public class serviceimpl implements service {
     public Emp createEmp(Emp emp) {
 
         return repo.save(emp);
-
     }
 
     @Override

@@ -18,6 +18,7 @@ public class Emp {
     private String firstName;
     private String lastName;
     private String address;
+    private String email;
     private double salary;
 
 }
