@@ -49,7 +49,7 @@ public class EmpController {
     }
 
     // update the database
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<Emp> updateEmp(@PathVariable int id, @RequestBody Emp emp) {
 
         return new ResponseEntity<>(s.updateEmp(id, emp), HttpStatus.OK);
