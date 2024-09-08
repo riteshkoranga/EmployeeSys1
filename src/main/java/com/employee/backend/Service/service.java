@@ -3,6 +3,7 @@ package com.employee.backend.Service;
 import java.util.List;
 
 import com.employee.backend.model.Emp;
+import com.employee.backend.controller.*;
 
 public interface service {
     public Emp createEmp(Emp emp);

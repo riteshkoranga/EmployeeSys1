@@ -3,10 +3,13 @@ package com.employee.backend.Service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.employee.backend.Repository.repository;
 import com.employee.backend.model.Emp;
 
+//annotate @service in serviceimpl  class it throws bean not found error
+@Service
 public class serviceimpl implements service {
     @Autowired
     private repository repo;
