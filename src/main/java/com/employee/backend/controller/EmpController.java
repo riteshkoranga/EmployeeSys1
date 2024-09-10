@@ -1,6 +1,7 @@
 package com.employee.backend.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.employee.backend.Service.service;
@@ -45,6 +46,7 @@ public class EmpController {
     }
 
     @DeleteMapping("/delete/{id}")
+    @CrossOrigin(origins = "http://localhost:3000", methods = { RequestMethod.DELETE, RequestMethod.OPTIONS })
     public ResponseEntity<String> deleteEmp(@PathVariable int id) {
         s.deleteEmp(id);
         return new ResponseEntity<>("Deleted succesfully", HttpStatus.OK);
@@ -52,6 +54,7 @@ public class EmpController {
 
     // update the database
     @PutMapping("/update/{id}")
+    @CrossOrigin(origins = "http://localhost:3000", methods = { RequestMethod.PUT, RequestMethod.OPTIONS })
     public ResponseEntity<Emp> updateEmp(@PathVariable int id, @RequestBody Emp emp) {
 
         return new ResponseEntity<>(s.updateEmp(id, emp), HttpStatus.OK);
