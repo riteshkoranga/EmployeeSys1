@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class WebController {
 
-    @GetMapping(value = "/**/{[path:[^\\.]*}")
+    @GetMapping(value = "/**/{[emp:[^\\.]*}")
     public String forwardReactRoutes() {
         return "forward:/index.html";
     }
