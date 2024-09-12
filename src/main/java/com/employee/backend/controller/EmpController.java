@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
 
-@CrossOrigin(origins = "https://employee-sys12-4b4a2f10c5a1.herokuapp.com/")
+@CrossOrigin(origins = "https://employee-sys12-4b4a2f10c5a1.herokuapp.com")
 @RestController
 @RequestMapping("/emp")
 public class EmpController {
